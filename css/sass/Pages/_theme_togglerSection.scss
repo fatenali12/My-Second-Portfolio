@@ -1,0 +1,81 @@
+.color-switcher {
+    position: fixed;
+    top: 25px;
+    right: -200px;
+    width: 150px;
+    padding: 8px;
+    z-index: 1000;
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    // -moz-backdrop-filter: blur(.4rem);
+    // -webkit-backdrop-filter: blur(.4rem);
+    // backdrop-filter: blur(.4rem);
+    .switcher-gear {
+        position: absolute;
+        top: 36px;
+        left: -90px;
+        color: #fff;
+        -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        -moz-backdrop-filter: blur(.4rem);
+        -webkit-backdrop-filter: blur(.4rem);
+        backdrop-filter: blur(.4rem);
+        padding: 5px 63px 2px 5px;
+        font-size: 22px;
+        border-radius: 1rem;
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 0px;
+        cursor: pointer;
+        .fa-palette {
+            animation: rotate 2s linear infinite;
+        }
+        @keyframes rotate {
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+    }
+    .theme-toggler {
+        // -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        // -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        // box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        // border-radius: 1rem;
+        // backdrop-filter: blur(.4rem);
+        span {
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            margin: 2rem 2.5rem;
+            cursor: pointer;
+            -webkit-box-shadow: 0 0 0 .5rem rgba(255, 255, 255, .2), 0 1rem 2rem rgba(0, 0, 0, .2);
+            -moz-box-shadow: 0 0 0 .5rem rgba(255, 255, 255, .2), 0 1rem 2rem rgba(0, 0, 0, .2);
+            box-shadow: 0 0 0 .5rem rgba(255, 255, 255, .2), 0 1rem 2rem rgba(0, 0, 0, .2);
+        }
+        .main-color {
+            background: linear-gradient($mainColor, $secondaryColor);
+        }
+        .second-color {
+            background: linear-gradient($secondmainColor, $secondsecondaryColor);
+        }
+        .third-color {
+            background: linear-gradient($thirdmainColor, $thirdsecondaryColor);
+        }
+        .fourth-color {
+            background: linear-gradient($fourthmainColor, $fourthsecondaryColor);
+        }
+        .fifth-color {
+            background: linear-gradient($fifthmainColor, $fifthsecondaryColor);
+        }
+        .sixth-color {
+            background: linear-gradient($sixthmainColor, $sixthsecondaryColor);
+        }
+    }
+}
+
+.color-switcher.active {
+    right: 0px;
+}

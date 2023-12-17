@@ -1,0 +1,12 @@
+.home {
+    padding-top: 5rem;
+    color: #eee;
+    .social-icon {
+        background: rgba(255, 255, 255, .1);
+        border-radius: 1rem;
+        -webkit-box-shadow: 0 .4rem rgba(0, 0, 0, .2);
+        -moz-box-shadow: 0 .4rem rgba(0, 0, 0, .2);
+        box-shadow: 0 .4rem rgba(0, 0, 0, .2);
+        margin-top: 5rem;
+    }
+}

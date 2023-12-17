@@ -1,0 +1,104 @@
+        .about-me {
+            .about-info {
+                p {
+                    font-size: .9rem;
+                    color: #eee;
+                }
+                .social-icon {
+                    width: 262px;
+                }
+            }
+            @media (max-width: 1191px) {
+                .about-info {
+                    p {
+                        font-size: .8rem;
+                    }
+                    .contact-btn {
+                        margin: 0 !important;
+                    }
+                }
+            }
+            @media (max-width: 992px) {
+                .img-box {
+                    img {
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
+                .about-info {
+                    p {
+                        font-size: .8rem;
+                    }
+                    .contact-btn {
+                        margin: 0 !important;
+                    }
+                }
+            }
+            @media (max-width: 992px) {
+                .about-info {
+                    p {
+                        font-size: .7rem;
+                    }
+                    .contact-btn {
+                        margin: 0 !important;
+                    }
+                }
+            }
+            .show {
+                -webkit-animation: showitems 2s both;
+                -moz-animation: showitems 2s both;
+                -o-animation: showitems 2s both;
+                animation: showitems 2s both;
+                -webkit-transition: $mainTransation ease-in;
+                -ms-transition: $mainTransation ease-in;
+                transition: $mainTransation ease-in;
+            }
+            @-webkit-keyframes showitems {
+                0% {
+                    opacity: 0;
+                    filter: blur(5px);
+                    transform: translateY(-50%);
+                }
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateY(0%);
+                }
+            }
+            @-moz-keyframes showitems {
+                0% {
+                    opacity: 0;
+                    filter: blur(5px);
+                    transform: translateY(-50%);
+                }
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateY(0%);
+                }
+            }
+            @-o-keyframes showitems {
+                0% {
+                    opacity: 0;
+                    filter: blur(5px);
+                    transform: translateY(-50%);
+                }
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateY(0%);
+                }
+            }
+            @keyframes showitems {
+                0% {
+                    opacity: 0;
+                    filter: blur(5px);
+                    transform: translateY(-50%);
+                }
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                    transform: translateY(0%);
+                }
+            }
+        }

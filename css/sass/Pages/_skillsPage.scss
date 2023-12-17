@@ -1,0 +1,127 @@
+.skills {
+    // background-color: aqua !important;
+    .skill-progress {
+        padding-left: 10px !important;
+        margin: .3rem 0;
+        border-radius: 1rem;
+        // box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        h3 {
+            font-size: 12px !important;
+            padding-left: 15px;
+        }
+        &:hover {
+            background-color: rgba(255, 255, 255, .5);
+            h3 {
+                color: #555 !important;
+            }
+        }
+        .progress-bar {
+            // position: relative;
+            width: 98%;
+            height: .3rem;
+            margin: .5rem 0;
+            background: #555;
+            border-radius: 1rem;
+            overflow: visible !important;
+            span {
+                display: block;
+                width: 20%;
+                height: 100%;
+                background: #fff;
+                border-radius: 1rem;
+                position: relative;
+                -webkit-transition: $mainTransation;
+                -ms-transition: $mainTransation;
+                transition: $mainTransation;
+                &::before {
+                    content: attr(data-progress);
+                    position: absolute;
+                    color: #fff;
+                    top: -32px;
+                    right: -19px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    width: 30px;
+                    padding: 4px 0;
+                    text-align: center;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 6px;
+                    border-color: #fff transparent transparent;
+                    right: -5px;
+                    top: -9px;
+                }
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .skill-progress {
+            margin: 0.5rem 0 !important;
+        }
+    }
+    @media (max-width: 576px) {
+        .skill-progress {
+            margin: 0.5rem 0 !important;
+        }
+    }
+    .show-skills {
+        -webkit-animation: showskill 2s both;
+        -moz-animation: showskill 2s both;
+        -o-animation: showskill 2s both;
+        animation: showskill 2s both;
+        -webkit-transition: $mainTransation ease-in;
+        -ms-transition: $mainTransation ease-in;
+        transition: $mainTransation ease-in;
+    }
+    @-webkit-keyframes showskill {
+        0% {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0%);
+        }
+    }
+    @-moz-keyframes showskill {
+        0% {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0%);
+        }
+    }
+    @-o-keyframes showskill {
+        0% {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0%);
+        }
+    }
+    @keyframes showskill {
+        0% {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(50%);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0%);
+        }
+    }
+}

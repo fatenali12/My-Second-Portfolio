@@ -1,0 +1,77 @@
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    // #4ecde6
+    z-index: 9999999;
+    .preloader {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin: -40px 0 0 -40px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e8b7d4;
+        -webkit-animation: spin 2s linear infinite;
+        -ms-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        -webkit-transition: $mainTransation ease;
+        -ms-transition: $mainTransation ease;
+        transition: $mainTransation ease;
+        // border-top-color: (linear-gradient($secondaryColor, $mainColor), 1);
+        &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #7facd6;
+            -webkit-animation: spin 3s linear infinite;
+            -ms-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+            -webkit-transition: $mainTransation ease;
+            -ms-transition: $mainTransation ease;
+            transition: $mainTransation ease;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: #ff1493;
+            -webkit-animation: spin 1.5s linear infinite;
+            -ms-animation: spin 1.5s linear infinite;
+            animation: spin 1.5s linear infinite;
+            -webkit-transition: $mainTransation ease;
+            -ms-transition: $mainTransation ease;
+            transition: $mainTransation ease;
+        }
+    }
+    @-moz-keyframes spin {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+    @-o-keyframes spin {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+    @keyframes spin {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+}

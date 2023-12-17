@@ -1,0 +1,34 @@
+//   Import Variables
+@use './variables/colors' as *;
+//   Import Variables   transition
+@use './variables/transition' as *;
+// Import Globel Component Ruls
+@import './Components/globalRules';
+// Import Social Icons Component
+@import './Components/socialIcons';
+// Import Section Tilte Component
+@import './Components/sectionTitleComponent';
+// Import Header
+@import './layouts/header';
+// Import Footer
+@import './layouts/footer';
+// Import Preloader Pages 
+@import './Pages/preloaderPage';
+// Import Home Page
+@import './Pages/homeSection';
+// Import Landing Pages
+@import './Pages/landingPage';
+// Import About Me
+@import './Pages/aboutmePage';
+// Import Skills
+@import './Pages/skillsPage';
+// Import portfolio
+@import './Pages/portfolio';
+// Import Contact Me
+@import './Pages/contactMe';
+// Import Theme Toggler Section
+@import './Pages/theme_togglerSection';
+// .active {
+//     clip-path: circle(4000px at 100% -20%);
+//     transform: scale(1);
+// }

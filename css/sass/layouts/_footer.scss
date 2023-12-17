@@ -1,0 +1,14 @@
+.footer {
+    background-image: linear-gradient($secondaryColor, $mainColor);
+    p {
+        &:hover {
+            color: $mainColor !important;
+            span {
+                color: #fff;
+            }
+        }
+        span {
+            color: $mainColor;
+        }
+    }
+}

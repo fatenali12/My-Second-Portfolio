@@ -1,0 +1,28 @@
+.socialIcon {
+    width: 30px;
+    height: 30px;
+    // background: $mainColor;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    // color: $secondaryColor;
+    color: #fff;
+    -webkit-transition: $mainTransation;
+    -ms-transition: $mainTransation;
+    transition: $mainTransation;
+    &:hover,
+    &:focus {
+        background: rgba(255, 255, 255, .2);
+        color: #555;
+        // color: $mainColor;
+        // background: $secondaryColor;
+        -webkit-box-shadow: 6px 12px 38px -4px rgba(232, 183, 212, 1);
+        -moz-box-shadow: 6px 12px 38px -4px rgba(232, 183, 212, 1);
+        box-shadow: 6px 12px 38px -4px rgba(232, 183, 212, 1);
+        -webkit-transition: $mainTransation;
+        -ms-transition: $mainTransation;
+        transition: $mainTransation;
+        border-radius: 10px;
+    }
+}
